@@ -1,5 +1,4 @@
 import react, { useState, useEffect } from 'react';
-import 'react-credit-cards/es/styles-compiled.css';
 import './app.css';
 import visa from './visa.png';
 import mastercard from './mastercard.png';
@@ -51,7 +50,7 @@ function App() {
       }
     }
 
-    return 'visa'; // default type
+    return 'visa';
   };
   const brandChange = () => {
     setpic(LOGO[cardType(cardNo)]);
