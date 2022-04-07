@@ -3,6 +3,7 @@ import './app.css';
 import visa from './visa.png';
 import mastercard from './mastercard.png';
 import discover from './discover.png';
+import unionpay from './unionpay.png';
 import ReactCardFlip from 'react-card-flip';
 import chip from './chip.png';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -18,6 +19,7 @@ function App() {
     visa,
     mastercard,
     discover,
+    unionpay
   };
   const [cardNo, setcardNo] = useState('');
   const [pic, setpic] = useState(visa);
