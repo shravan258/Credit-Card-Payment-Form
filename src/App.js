@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import './app.css';
 import visa from './visa.png';
 import mastercard from './mastercard.png';
