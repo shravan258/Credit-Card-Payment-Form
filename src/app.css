@@ -2,16 +2,18 @@
 .card-back {
   height: 250px;
   width: 450px;
-  background-image: linear-gradient(#ff8a00, #e52e71);
+  background-image: url('./6.jpeg');
+
   border-radius: 12px;
   margin: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  opacity: 0.9;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 
+.overlay {
+}
 .card-bt {
   /* margin-top: -60px; */
   display: flex;
@@ -76,7 +78,7 @@
 .brandlogo {
   max-width: 40%;
   object-fit: contain;
-  max-height: 50%;
+  max-height: 40%;
 }
 
 .form {

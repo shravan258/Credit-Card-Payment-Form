@@ -1,4 +1,5 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+
 import './app.css';
 import visa from './visa.png';
 import mastercard from './mastercard.png';
@@ -6,20 +7,29 @@ import discover from './discover.png';
 import unionpay from './unionpay.png';
 import ReactCardFlip from 'react-card-flip';
 import chip from './chip.png';
+import amex from './amex.png';
+import dinnersclub from './dinersclub.png';
+import jcb from './jcb.png';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const CARDS = {
-    visa: '^4',
-    mastercard: '^5[1-5]',
+    visa: '^4[0-9]{5}',
+    mastercard: '^5[1-5][0-9]',
     discover: '^6011',
     unionpay: '^62',
+    amex: '^3[47][0-9]',
+    dinnersclub: '^3[0-8][52]',
+    jcb: '^35',
   };
   const LOGO = {
     visa,
     mastercard,
     discover,
-    unionpay
+    unionpay,
+    amex,
+    dinnersclub,
+    jcb,
   };
   const [cardNo, setcardNo] = useState('');
   const [pic, setpic] = useState(visa);
@@ -64,6 +74,7 @@ function App() {
 
   return (
     <div className='form'>
+      <div className='overlay'></div>
       <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
         <div className='card-front'>
           <div className='logo'>
