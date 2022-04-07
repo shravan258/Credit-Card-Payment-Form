@@ -1,0 +1,172 @@
+.card-front,
+.card-back {
+  height: 250px;
+  width: 450px;
+  background-image: linear-gradient(#ff8a00, #e52e71);
+  border-radius: 12px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0.9;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+.card-bt {
+  /* margin-top: -60px; */
+  display: flex;
+}
+
+.holder,
+.expires {
+  margin-top: -90px;
+  margin-left: 30px;
+  color: rgb(219, 219, 219);
+}
+
+.bt-text1 {
+  background-color: transparent;
+  font-size: 18px;
+  width: 160%;
+  outline: none;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: -40px;
+  border: none;
+}
+.bt-text {
+  background-color: transparent;
+  font-size: 18px;
+  width: 40%;
+  outline: none;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: -40px;
+  border: none;
+  margin-left: 100px;
+}
+
+.inpBox {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+.cardnum {
+  height: 30px;
+  width: 70%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  letter-spacing: 2px;
+  font-size: 22px;
+  color: white;
+  margin-top: -45px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.brandlogo {
+  max-width: 40%;
+  object-fit: contain;
+  max-height: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  height: 600px;
+  width: 640px;
+  margin-top: -150px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form-subcontainer {
+  padding-top: 120px;
+  margin: 40px;
+}
+
+.date-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.namearea {
+  margin-bottom: 30px;
+}
+
+.monthyear {
+  margin-top: 20px;
+}
+
+.selectopt {
+  height: 50px;
+  width: 120px;
+}
+
+.area2 {
+  height: 50px;
+}
+
+.submit {
+  margin-top: 40px;
+  width: 100%;
+  height: 50px;
+}
+
+.black-strip {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  margin-top: 25px;
+  opacity: 80%;
+}
+
+.etx {
+  width: 80%;
+  margin-left: 20px;
+  position: absolute;
+  margin-top: -40px;
+  border-radius: 5px;
+  height: 36px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.cvvlabel {
+  margin-left: 85%;
+  margin-top: -0px;
+  font-size: 20px;
+}
+
+.backlogo {
+  margin-left: 62%;
+  padding-bottom: 20px;
+  max-width: 30%;
+  object-fit: contain;
+  max-height: 30%;
+}
+
+.expire-text {
+  margin-left: 120px;
+}
