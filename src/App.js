@@ -47,7 +47,7 @@ function App() {
   const handleUnflip = () => setisFlipped(false);
 
   const handleNumChange = (event) => {
-    let value = event.target.value;
+    let value = event.target.value.replace(/\D/g, '');
     value = value.replace(/\s+/g, '');
     const credNum = value.match(/.{1,4}/g)?.join(' ') ?? value;
     setcardNo(credNum);
@@ -139,6 +139,7 @@ function App() {
             <input
               type='text'
               required
+              pattern='[0-9]*'
               className='form-control area2'
               value={cardNo}
               onChange={handleNumChange}
@@ -205,7 +206,7 @@ function App() {
               <div class='form-group'>
                 <label for='formGroupExampleInput'>CVV</label>
                 <input
-                  type='text'
+                  type='number'
                   required
                   class='form-control area2'
                   id='formGroupExampleInput'
